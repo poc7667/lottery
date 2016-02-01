@@ -1,0 +1,16 @@
+!!!
+%html
+  %head
+    %title VivoLottery
+    = javascript_include_tag "application"
+    = javascript_include_tag "underscore"
+    = javascript_include_tag "react"
+    %link{:href => asset_path("pagination/css/reset.css"), :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => asset_path("pagination/css/un-reset.css"), :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => asset_path("pagination/css/layout.css"), :rel => "stylesheet", :type => "text/css"}/
+    / = stylesheet_link_tag "custom"
+    = csrf_meta_tags
+  %body
+    = yield
+    = javascript_include_tag params[:controller]
+    = javascript_include_tag :slide_show, "data-turbolinks-track" => true

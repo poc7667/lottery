@@ -1,0 +1,66 @@
+.unreset address,
+.unreset blockquote,
+.unreset dd, .unreset div,
+.unreset dl, .unreset dt, .unreset fieldset, .unreset form,
+.unreset frame, .unreset frameset,
+.unreset h1, .unreset h2, .unreset h3, .unreset h4,
+.unreset h5, .unreset h6, .unreset noframes,
+.unreset ol, .unreset p, .unreset ul, .unreset center,
+.unreset dir, .unreset hr, .unreset menu, .unreset pre { display: block }
+.unreset li { display: list-item }
+.unreset head { display: none }
+.unreset table { display: table }
+.unreset tr { display: table-row }
+.unreset thead { display: table-header-group }
+.unreset tbody { display: table-row-group }
+.unreset tfoot { display: table-footer-group }
+.unreset col { display: table-column }
+.unreset colgroup { display: table-column-group }
+.unreset td, .unreset th { display: table-cell }
+.unreset caption { display: table-caption }
+.unreset th { font-weight: bolder; text-align: center }
+.unreset caption { text-align: center }
+.unreset body { margin: 8px }
+.unreset h1 { font-size: 2em; margin: .67em 0 }
+.unreset h2 { font-size: 1.5em; margin: .75em 0 }
+.unreset h3 { font-size: 1.17em; margin: .83em 0 }
+.unreset h4, .unreset p,
+.unreset blockquote, .unreset ul,
+.unreset fieldset, .unreset form,
+.unreset ol, .unreset dl, .unreset dir,
+.unreset menu { margin: 1.12em 0 }
+.unreset h5 { font-size: .83em; margin: 1.5em 0 }
+.unreset h6 { font-size: .75em; margin: 1.67em 0 }
+.unreset h1, .unreset h2, .unreset h3, .unreset h4,
+.unreset h5, .unreset h6, .unreset b,
+.unreset strong { font-weight: bolder }
+.unreset blockquote { margin-left: 40px; margin-right: 40px }
+.unreset i, .unreset cite, .unreset em,
+.unreset var, .unreset address { font-style: italic }
+.unreset pre, .unreset tt, .unreset code,
+.unreset kbd, .unreset samp { font-family: monospace }
+.unreset pre { white-space: pre }
+.unreset button, .unreset textarea,
+.unreset input, .unreset select { display: inline-block }
+.unreset big { font-size: 1.17em }
+.unreset small, .unreset sub, .unreset sup { font-size: .83em }
+.unreset sub { vertical-align: sub }
+.unreset sup { vertical-align: super }
+.unreset table { border: 1px solid; border-spacing: 2px; }
+.unreset thead, .unreset tbody,
+.unreset tfoot { vertical-align: middle }
+.unreset th, .unreset tr { vertical-align: inherit; border:1px solid;padding:5; font-size:100%; }
+.unreset td{ vertical-align: inherit; border:1px solid; padding-left:5px; font-size:100%; }
+.unreset s, .unreset strike, .unreset del { text-decoration: line-through }
+.unreset hr { border: 1px inset }
+.unreset ol, .unreset ul, .unreset dir,
+.unreset menu, .unreset dd { margin-left: 40px }
+.unreset ol { list-style-type: decimal }
+.unreset ol ul, .unreset ul ol,
+.unreset ul ul, .unreset ol ol { margin-top: 0; margin-bottom: 0 }
+.unreset ul { list-style-type: disc }
+.unreset u, .unreset ins { text-decoration: underline }
+.unreset br:before { content: "\A"; white-space: pre-line }
+.unreset center { text-align: center }
+.unreset :link, .unreset :visited { text-decoration: underline }
+.unreset :focus { outline: thin dotted invert }

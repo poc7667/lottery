@@ -1,0 +1,72 @@
+!!!
+%html
+  %head
+    %title VivoLottery
+    = javascript_include_tag "application"
+    = javascript_include_tag "underscore"
+    = javascript_include_tag "react"
+    / = stylesheet_link_tag "custom"
+    = csrf_meta_tags
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "Mosaddek", :name => "author"}/
+    %meta{:content => "FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina", :name => "keyword"}/
+    %link{:href => "#", :rel => "s<p></p>hortcut icon"}/
+    %title Form Component
+    / Bootstrap core CSS
+    %link{:href => asset_path("flatlab/css/bootstrap.min.css"), :rel => "stylesheet"}/
+    %link{:href => asset_path("flatlab/css/bootstrap-reset.css"), :rel => "stylesheet"}/
+    / external css
+    %link{:href => asset_path("flatlab/assets/font-awesome/css/font-awesome.css"), :rel => "stylesheet"}/
+    %link{:href => asset_path("flatlab/assets/bootstrap-datepicker/css/datepicker.css"), :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => asset_path("flatlab/assets/bootstrap-colorpicker/css/colorpicker.css"), :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => asset_path("flatlab/assets/bootstrap-daterangepicker/daterangepicker.css"), :rel => "stylesheet", :type => "text/css"}/
+    / right slidebar
+    %link{:href => asset_path("flatlab/css/slidebars.css"), :rel => "stylesheet"}/
+    / Custom styles for this template
+    %link{:href => asset_path("flatlab/css/style.css"), :rel => "stylesheet"}/
+    %link{:href => asset_path("flatlab/css/style-responsive.css"), :rel => "stylesheet"}/
+    %link{:href => asset_path("flatlab/css/pnotify.custom.min.css"), :media => "all", :rel => "stylesheet", :type => "text/css"}/
+    = stylesheet_link_tag    params[:controller], media: "all", "data-turbolinks-track" => true    
+
+    / HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries
+    /[if lt IE 9]
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+
+  %body
+    = render 'layouts/flatlab_header_and_sidebar'
+    %section#main-content
+      = yield
+    = javascript_include_tag params[:controller]
+    %script{:src => asset_path("flatlab/js/jquery.js")}
+    %script{:src => asset_path("flatlab/js/bootstrap.min.js")}
+    %script{:src => asset_path("flatlab/js/jquery.scrollTo.min.js")}
+    %script{:src => asset_path("flatlab/js/jquery.nicescroll.js"), :type => "text/javascript"}
+    %script{:src => asset_path("flatlab/js/jquery-ui-1.9.2.custom.min.js")}
+    %script.include{:src => asset_path("flatlab/js/jquery.dcjqaccordion.2.7.js"), :type => "text/javascript"}
+    %script{:src => asset_path("flatlab/js/pnotify.custom.min.js"), :type => "text/javascript"}
+    / custom switch
+    %script{:src => asset_path("flatlab/js/bootstrap-switch.js")}
+    / custom tagsinput
+    %script{:src => asset_path("flatlab/js/jquery.tagsinput.js")}
+    / custom checkbox & radio
+    %script{:src => asset_path("flatlab/js/ga.js"), :type => "text/javascript"}
+    %script{:src => asset_path("flatlab/assets/bootstrap-datepicker/js/bootstrap-datepicker.js"), :type => "text/javascript"}
+    %script{:src => asset_path("flatlab/assets/bootstrap-daterangepicker/date.js"), :type => "text/javascript"}
+    %script{:src => asset_path("flatlab/assets/bootstrap-daterangepicker/daterangepicker.js"), :type => "text/javascript"}
+    %script{:src => asset_path("flatlab/assets/bootstrap-colorpicker/js/bootstrap-colorpicker.js"), :type => "text/javascript"}
+    %script{:src => asset_path("flatlab/assets/ckeditor/ckeditor.js"), :type => "text/javascript"}
+    %script{:src => asset_path("flatlab/assets/bootstrap-inputmask/bootstrap-inputmask.min.js"), :type => "text/javascript"}
+    %script{:src => asset_path("flatlab/js/respond.min.js")}
+    / right slidebar
+    %script{:src => asset_path("flatlab/js/slidebars.min.js")}
+    / common script for all pages
+    %script{:src => asset_path("flatlab/js/common-scripts.js")}
+    / script for this page
+    %script{:src => asset_path("flatlab/js/form-component.js")}    
+    = javascript_include_tag params[:controller], "data-turbolinks-track" => true
+    = javascript_include_tag :welcome_sort_prizes, "data-turbolinks-track" => true
+    = javascript_include_tag :input_prizes, "data-turbolinks-track" => true
+    = javascript_include_tag :revert_taken_prize, "data-turbolinks-track" => true

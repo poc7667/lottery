@@ -1,0 +1,2 @@
+module MarqueeHelper
+end

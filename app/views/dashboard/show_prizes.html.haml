@@ -1,0 +1,20 @@
+%div.pagenum
+  = paginate @prizes
+
+%table.table.table-striped.table-bordered.table-hover
+  %thead
+    %tr
+    %th.center SN
+    %th.center Name
+    %th.center Owner
+
+
+  - @prizes.each do |prize|
+    %tr
+      %td.center= prize.id
+      %td.center
+        = prize.name
+      %td.center
+        - unless prize.staff.nil?
+          = prize.staff.name
+

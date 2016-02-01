@@ -1,0 +1,66 @@
+%section#container
+  / header start
+  %header.header.white-bg
+    .sidebar-toggle-box
+      .fa.fa-bars.tooltips{"data-original-title" => "Toggle Navigation", "data-placement" => "right"}
+    / logo start
+    %a.logo{:href => "index-2.html"}
+      VIVOTEK
+      %span LOTTERY
+    / logo end
+    #top_menu.nav.notify-row
+      / notification start
+      %ul.nav.top-menu
+    .top-nav
+      %ul.nav.pull-right.top-menu
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+            %img{:alt => "", :src => asset_path("images/vivotek-avatar.jpg"), :height => "42"}/
+            %span.username 
+            %b.caret
+          %ul.dropdown-menu.extended.logout
+            .log-arrow-up
+
+            %li
+              %a{:href => "login.html"}
+                %i.fa.fa-key
+                Log in
+  / header end
+  / sidebar start
+  %aside
+    #sidebar.nav-collapse
+      / sidebar menu start
+      %ul#nav-accordion.sidebar-menu
+        %li
+          %a{:href => root_path }
+            %i.fa.fa-barcode
+            %span 獎項登錄
+        %li
+          %a{:href => welcome_check_prizes_path }
+            %i.fa.fa-bars
+            %span 獎項複審            
+        %li
+          = link_to welcome_prizes_path do
+            %i.fa.fa-gift
+            %span 領取獎項
+        %li
+          %a{:href => marquee_index_path , :target => '_blank' }
+            %i.fa.fa-sitemap
+            %span 投影播放
+        %li.sub-menu
+          %a{:href => "javascript:;"}
+            %i.fa.fa-glass
+            %span 管理
+          %ul.sub
+            %li 
+              = link_to "主管捐贈名單", welcome_donators_path
+            %li 
+              = link_to "撤銷已領取名單", welcome_revert_taken_prize_path
+            %li 
+              = link_to "員工清單", query_staffs_path, :target => '_blank'
+            %li 
+              = link_to "中獎清單", query_winner_list_path, :target => '_blank'
+            %li 
+              = link_to "未中獎清單", query_loser_list_path, :target => '_blank'             
+            %li
+              = link_to "獎項清單", query_prizes_path, :target => '_blank'

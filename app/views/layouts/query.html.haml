@@ -1,0 +1,12 @@
+!!!
+%html
+  %head
+    %title VivoLottery
+    = javascript_include_tag "application", media: "all", "data-turbolinks-track" => true
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "underscore"
+    = javascript_include_tag "react"
+  %body
+    = yield
+    = javascript_include_tag :slide_show, "data-turbolinks-track" => true
+    = javascript_include_tag :jquery_glide_min, "data-turbolinks-track" => true
