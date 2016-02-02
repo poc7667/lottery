@@ -1,4 +1,4 @@
-/** @jsx React.DOM */
+
 
 var CONFIG = {
     sort: {column: "_id", order: "desc"},
@@ -183,4 +183,4 @@ var App = React.createClass({
 
 
 if(document.getElementById("input_prizes"))
-    React.renderComponent(<App />, document.getElementById("input_prizes"));
+    ReactDOM.render(<App />, document.getElementById("input_prizes"));

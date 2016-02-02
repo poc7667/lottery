@@ -1,4 +1,4 @@
-/** @jsx React.DOM */
+
 
 var CONFIG = {
     sort: {column: "_id", order: "desc"},

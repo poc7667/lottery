@@ -1,4 +1,5 @@
-/** @jsx React.DOM */
+//require('react-dom');
+
 var CONFIG = {
   sort: { column: "_id", order: "desc" },
   filterText: "",
@@ -168,6 +169,6 @@ var App = React.createClass({
 
 if(document.getElementById("searchWinner")){
   
-  React.render(<App />, document.getElementById("searchWinner"));
+  ReactDOM.render(<App />, document.getElementById("searchWinner"));
 }
 

@@ -1,4 +1,4 @@
-/** @jsx React.DOM */
+
 var CONFIG = {
     sort: { column: "staff_id", order: "asc" },
     dataPerPage:5,
@@ -124,7 +124,7 @@ setInterval(function(){
     if(Reveal.isLastSlide())
     {
         Reveal.slide(0);
-        React.renderComponent(<WinnerTable  dataSource={"/query/winner_list"}  dataSource2={"/query/winner_list"} config={CONFIG} />, document.getElementById("Marquee"));
+        ReactDOM.render(<WinnerTable  dataSource={"/query/winner_list"}  dataSource2={"/query/winner_list"} config={CONFIG} />, document.getElementById("Marquee"));
     }
     else{
         Reveal.next();
@@ -134,7 +134,7 @@ setInterval(function(){
 $(document).ready(function() {
 
     if(document.getElementById("Marquee")){
-        React.render(<WinnerTable  dataSource={"/query/winner_list"}  dataSource2={"/query/winner_list"} config={CONFIG} />,
+        ReactDOM.render(<WinnerTable  dataSource={"/query/winner_list"}  dataSource2={"/query/winner_list"} config={CONFIG} />,
             document.getElementById("Marquee"));
     }
 
