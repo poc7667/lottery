@@ -13,6 +13,12 @@ Rails.application.config.assets.paths << "#{Rails.root}/app/assets/themes/"
 # config.assets.paths << "#{Rails.root}/vendor/themes/flatlab"
 Rails.application.config.assets.precompile += %w( #{Rails.root}/app/assets/themes/**/application.js )
 Rails.application.config.assets.precompile += %w( #{Rails.root}/app/assets/themes/**/application.css )
+Rails.application.config.assets.precompile += %w( welcome.js )
+Rails.application.config.assets.precompile += %w( welcome_sort_prizes.js )
+Rails.application.config.assets.precompile += %w( input_prizes.js )
+Rails.application.config.assets.precompile += %w( revert_taken_prize.js )
+Rails.application.config.assets.precompile += %w( check_prizes.js )
+Rails.application.config.assets.precompile += %w( marquee.js )
 
 Rails.application.config.assets.precompile += %w[*.png *.jpg *.jpeg *.gif *.woff *ttf *.svg *.eot *.otf]
 Rails.application.config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/

@@ -86,7 +86,7 @@ gem 'zip'
 gem 'rubyzip'
 gem 'roo'
 gem 'spring-commands-rspec'
-gem 'react-rails', '~> 1.0.0.pre', github: 'reactjs/react-rails'
+gem 'react-rails', '~> 1.5.0', github: 'reactjs/react-rails'
 gem 'oj'
 gem 'oj_mimic_json'
 
@@ -95,3 +95,4 @@ gem 'faker'
 gem 'puma'
 
 gem 'redis'
+gem 'roo-xls'
