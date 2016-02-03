@@ -96,3 +96,4 @@ gem 'puma'
 
 gem 'redis'
 gem 'roo-xls'
+gem 'dotenv-rails'
