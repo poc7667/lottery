@@ -70,7 +70,7 @@ var WinnerTable = React.createClass({
         var cell = function(x) {
             return columnNames.map(function(c) {
                 if (c == 'staff_id')
-                    return <td >{x[c].replace("A0","晶睿").replace("B0","睿緻")}</td>;
+                    return <td >{x[c].replace("A0","晶睿").replace("B0","睿緻").replace("E0","歐特斯").replace("F0","高譽")}</td>;
                 else if (c == '_id')
                     return <td >{'第'+x[c]+'獎'}</td>;
                 else if (c == 'name')
