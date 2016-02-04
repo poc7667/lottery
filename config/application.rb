@@ -33,7 +33,7 @@ module VivoLottery
     config.assets.precompile += %w[*.png *.jpg *.jpeg *.gif]
     config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
 
-
+    config.react.jsx_transformer_class = React::JSX::JSXTransformer
     config.action_dispatch.default_headers.merge!({
       'Access-Control-Allow-Origin' => '*',
       'Access-Control-Request-Method' => '*'
