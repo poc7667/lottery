@@ -13,7 +13,7 @@ class Staff
     begin
       prizes.first.name
     rescue Exception => e
-      nil      
+      nil
     end
   end
 
@@ -29,5 +29,5 @@ class Staff
 
 
   scope :by_year, ->(year) { where(:year.gte => Date.strptime( year.to_s,"%Y"), :year.lte => Date.strptime( (year+1).to_s,"%Y")) }
-  default_scope -> { by_year(2015).without(:comment, :arrival_date, :created_at, :updated_at, :year) }
+  default_scope -> { by_year(2016).without(:comment, :arrival_date, :created_at, :updated_at, :year) }
 end
