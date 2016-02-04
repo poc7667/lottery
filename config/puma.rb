@@ -1,16 +1,15 @@
-workers Integer(ENV['WEB_CONCURRENCY'] || 10)
-threads_count = Integer(10)
-threads threads_count, threads_count
-
+APP_NAME = "vvtk_lottery"
+app_path = File.expand_path('../', File.dirname(__FILE__))
+pidfile "/tmp/puma.#{APP_NAME}.pid"
+bind "unix:///tmp/puma.#{APP_NAME}.sock"
+stdout_redirect "/tmp/puma.stdout.#{APP_NAME}.log", "/tmp/puma.stderr.#{APP_NAME}.log", true
+workers Integer(ENV['WEB_CONCURRENCY'] || 1)
+threads 1, 5
 preload_app!
 
 rackup      DefaultRackup
-port        ENV['PORT']     ||  4001
-environment ENV['RACK_ENV'] || 'development'
+port        ENV['PORT']     || 7667
+rails_env = ENV['RAILS_ENV'] || "production"
+environment rails_env
 
-on_worker_boot do
-  # Worker specific setup for Rails 4.1+
-  # See: https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server#on-worker-boot
- # ActiveRecord::Base.establish_connection
-end
-
+activate_control_app
