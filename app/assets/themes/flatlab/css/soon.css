@@ -189,10 +189,6 @@ ANIMATIONS
     0% { -o-transform: rotate(0deg);}
     100% { -o-transform: rotate(360deg);};
 }
-@-keyframes InfiniteTurn {
-    0% { transform: rotate(0deg);}
-    100% { transform: rotate(360deg);};
-}
 
 @-webkit-keyframes bounceInLeft {
     0% {

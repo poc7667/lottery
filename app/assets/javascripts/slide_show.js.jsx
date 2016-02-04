@@ -1,4 +1,3 @@
-/** @jsx React.DOM */
 
 // WinnerTable Config
 var CONFIG = {

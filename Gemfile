@@ -6,6 +6,8 @@ gem 'rails', '4.2.0'
 # Use SCSS for stylesheets
 gem 'responders', '~> 2.0'
 gem 'sass-rails', '~> 5.0'
+gem 'sprockets', '2.12.4'
+gem 'sprockets-rails', '2.3.2'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -44,8 +46,7 @@ group :development, :test do
 end
 
 gem "minitest"
-gem 'bootstrap-sass'
-gem 'sass', '>= 3.2.19'
+gem 'bootstrap-sass', '>= 3.3.5'
 gem 'compass-rails'
 gem 'rails-html-sanitizer', '~> 1.0'
 gem 'therubyracer'
