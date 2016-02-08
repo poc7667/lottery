@@ -1,5 +1,4 @@
-
-
+/** @jsx React.DOM */
 var CONFIG = {
     sort: {column: "_id", order: "desc"},
     numberOfBallot:12,
@@ -183,4 +182,4 @@ var App = React.createClass({
 
 
 if(document.getElementById("input_prizes"))
-    ReactDOM.render(<App />, document.getElementById("input_prizes"));
+    React.render(<App />, document.getElementById("input_prizes"));

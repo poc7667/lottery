@@ -1,4 +1,4 @@
-
+/** @jsx React.DOM */
 // WinnerTable Config
 var CONFIG = {
     sort: { column: "staff_id", order: "asc" },

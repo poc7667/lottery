@@ -1,4 +1,4 @@
-
+/** @jsx React.DOM */
 
 var CONFIG = {
   sort: {column: "_id", order: "desc"},
@@ -216,7 +216,7 @@ var App = React.createClass({
 
 if(document.getElementById("check_prizes")){
   alert("此頁面請勿切換頻繁，會導致主機當機！獨立開啟這頁面即可。如果需要瀏覽其他網頁請另外開視窗，謝謝。")
-  ReactDOM.render(<App />, document.getElementById("check_prizes"));
+  React.render(<App />, document.getElementById("check_prizes"));
 }
 
 
